@@ -6,6 +6,7 @@
         <field name="arch" type="xml">
             <form string="Nuevo">
                 <group>
+                    <field name="name"/>
                     <h2>Bienvenido a este nuevo módulo de Odoo</h2>
                 </group>
                 <footer>
@@ -22,6 +23,7 @@
         <field name="arch" type="xml">
             <form string="Acerca de">
                 <group>
+                    <field name="name"/>
                     <p>Autor: Alderete Lucas Alberto</p>
                     <p>Empresa: ALDERETE INFORMATICA Y SOPORTE</p>
                 </group>
