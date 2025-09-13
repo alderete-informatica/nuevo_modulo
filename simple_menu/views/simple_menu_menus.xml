@@ -1,0 +1,34 @@
+<odoo>
+    <!-- Menú principal -->
+    <menuitem id="menu_simple_root"
+              name="Simple Menu"
+              sequence="10"/>
+
+    <!-- Acción Nuevo -->
+    <record id="action_simple_menu_nuevo" model="ir.actions.act_window">
+        <field name="name">Nuevo</field>
+        <field name="res_model">simple.menu</field>
+        <field name="view_mode">form</field>
+        <field name="view_id" ref="view_simple_menu_nuevo"/>
+        <field name="target">new</field>
+    </record>
+
+    <menuitem id="menu_simple_nuevo"
+              name="Nuevo"
+              parent="menu_simple_root"
+              action="action_simple_menu_nuevo"/>
+
+    <!-- Acción Acerca de -->
+    <record id="action_simple_menu_acerca" model="ir.actions.act_window">
+        <field name="name">Acerca de</field>
+        <field name="res_model">simple.menu</field>
+        <field name="view_mode">form</field>
+        <field name="view_id" ref="view_simple_menu_acerca"/>
+        <field name="target">new</field>
+    </record>
+
+    <menuitem id="menu_simple_acerca"
+              name="Acerca de"
+              parent="menu_simple_root"
+              action="action_simple_menu_acerca"/>
+</odoo>

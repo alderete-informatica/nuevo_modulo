@@ -1,0 +1,34 @@
+<odoo>
+    <!-- Ventana emergente para "Nuevo" -->
+    <record id="view_simple_menu_nuevo" model="ir.ui.view">
+        <field name="name">simple.menu.nuevo</field>
+        <field name="model">simple.menu</field>
+        <field name="arch" type="xml">
+            <form string="Nuevo">
+                <group>
+                    <h2>Bienvenido a este nuevo módulo de Odoo</h2>
+                </group>
+                <footer>
+                    <button string="Cerrar" class="btn-secondary" special="cancel"/>
+                </footer>
+            </form>
+        </field>
+    </record>
+
+    <!-- Ventana emergente para "Acerca de" -->
+    <record id="view_simple_menu_acerca" model="ir.ui.view">
+        <field name="name">simple.menu.acerca</field>
+        <field name="model">simple.menu</field>
+        <field name="arch" type="xml">
+            <form string="Acerca de">
+                <group>
+                    <p>Autor: Alderete Lucas Alberto</p>
+                    <p>Empresa: ALDERETE INFORMATICA Y SOPORTE</p>
+                </group>
+                <footer>
+                    <button string="Cerrar" class="btn-secondary" special="cancel"/>
+                </footer>
+            </form>
+        </field>
+    </record>
+</odoo>
