@@ -1,8 +1,6 @@
 <odoo>
     <!-- Menú principal -->
-    <menuitem id="menu_simple_root"
-              name="Simple Menu"
-              sequence="10"/>
+    <menuitem id="menu_simple_root" name="Simple Menu" sequence="10"/>
 
     <!-- Acción Nuevo -->
     <record id="action_simple_menu_nuevo" model="ir.actions.act_window">
